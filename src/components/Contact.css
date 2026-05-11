@@ -1,0 +1,21 @@
+.contact {
+  min-height: 60vh;
+  padding: 8rem 0;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-description {
+  color: var(--text-secondary);
+  font-size: 1.15rem;
+  margin-bottom: 3rem;
+}
+
+.contact-btn {
+  font-size: 1.1rem;
+  padding: 1rem 2rem;
+}
