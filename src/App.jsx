@@ -43,6 +43,21 @@ const projectData = [
 
 function App() {
   const [activeProject, setActiveProject] = useState(null);
+  const [titleText, setTitleText] = useState("");
+  const fullTitle = "Nicholas Franzwa";
+
+  React.useEffect(() => {
+    let currentIndex = 0;
+    const interval = setInterval(() => {
+      if (currentIndex <= fullTitle.length) {
+        setTitleText(fullTitle.slice(0, currentIndex));
+        currentIndex++;
+      } else {
+        clearInterval(interval);
+      }
+    }, 120);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="collage-container">
@@ -51,7 +66,10 @@ function App() {
 
       {/* Center Title */}
       <div className="center-title-container">
-        <h1 className="main-title">Nicholas Franzwa</h1>
+        <h1 className="main-title">
+          {titleText}
+          <span className="typewriter-cursor">|</span>
+        </h1>
         <div className="title-accent"></div>
         <div className="pushpins">
           <div className="pin pin-1"></div>
