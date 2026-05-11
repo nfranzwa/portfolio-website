@@ -96,6 +96,7 @@ function App() {
           onClick={() => setActiveProject(project)}
         >
           <div className="polaroid-image" style={{ backgroundImage: `url(${project.image})` }}></div>
+          <div className="polaroid-caption">{project.title}</div>
         </div>
       ))}
 
