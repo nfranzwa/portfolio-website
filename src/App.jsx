@@ -29,15 +29,6 @@ const projectData = [
     description: 'End-to-end design and assembly of an electric skateboard, featuring custom mounts, high-power battery management, and custom motor controllers.',
     github: 'https://github.com/nfran/Engineering-Portfolio/tree/main/Custom%20Electric%20Skateboard',
     tech: ['CAD', 'Machining', 'Electronics', 'Battery Systems']
-  },
-  {
-    id: 'trading',
-    title: 'Algorithmic Trading System',
-    image: 'trading.png',
-    position: { top: '12%', right: '18%', rotate: '6deg' },
-    description: 'Data extraction pipelines and backtesting frameworks to parse alternative datasets and evaluate quantitative trading strategies.',
-    github: 'https://github.com/nfran/StockData',
-    tech: ['Python', 'Pandas', 'Parquet', 'Data Engineering']
   }
 ];
 
