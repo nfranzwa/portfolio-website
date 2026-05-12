@@ -61,11 +61,6 @@ function App() {
           {titleText}
           <span className="typewriter-cursor">|</span>
         </h1>
-        <div className="title-accent"></div>
-        <div className="pushpins">
-          <div className="pin pin-1"></div>
-          <div className="pin pin-2"></div>
-        </div>
       </div>
 
       {/* Post-it Note */}
